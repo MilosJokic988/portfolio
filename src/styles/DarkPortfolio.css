@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+.hero-section {
+  background-image: url('../assets/dark/hero-bg.png');
+  background-position: center 15%; /* fokus gore */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+  padding: 0 1rem;
+}
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-title {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 3rem; /* smanjeno */
+  letter-spacing: 1.5px;
+  color: #e0e0e0;
+  text-shadow: 2px 2px 4px #000;
+  animation: fadeInDown 1s ease-out;
+  margin-bottom: 0.3rem;
+}
+
+.lead {
+  font-size: 1.2rem; /* bolje za citljivost */
+  font-weight: 400;
+  color: #ccc;
+  text-shadow: 1px 1px 2px #000;
+  margin-top: 0;
+}
+
+@keyframes fadeInDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.dark-portfolio {
+  background: linear-gradient(180deg, #0d0d0d 0%, #1a1a1a 100%);
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  padding-top: 60px;
+}
+
+.card img {
+  max-height: 220px; /* ograničeno da slike ne budu prevelike */
+  object-fit: cover;
+  filter: grayscale(100%) brightness(0.8);
+  transition: 0.3s ease-in-out;
+  border-radius: 6px;
+  padding-top: 50px;
+}
+
+.card:hover img {
+  filter: grayscale(0%) brightness(1);
+  transform: scale(1.05);
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #eee;
+  margin-bottom: 0.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #bbb;
+  margin-bottom: 1rem;
+}
+.dark-portfolio .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.85);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  .hero-section {
+    height: 80vh;
+    padding: 1rem;
+    background-position: center 20%;
+  }
+
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .card img {
+    max-height: 180px;
+    padding-top: 20px;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+  }
+
+  .card-text {
+    font-size: 0.85rem;
+  }
+
+  .dark-portfolio .row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .image-modal img {
+    max-width: 95%;
+    max-height: 80%;
+  }
+}

@@ -1,0 +1,32 @@
+.footer-section {
+  background: #111;
+  border-top: 1px solid #222;
+}
+
+.footer-links a {
+  color: #aaa;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 5px #fff;
+}
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .footer-links a {
+    margin: 0;
+    font-size: 0.9rem;
+  }
+}
