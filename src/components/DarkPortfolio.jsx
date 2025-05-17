@@ -27,7 +27,7 @@ const projects = [
     title: "Witcher: Path of the Wolf",
     image: witcherImg,
     description: "Svet tame, čudovišta i moralne sive zone. Geralt bi bio ponosan.",
-    link: "https://witcher"
+    link: "https://witcherr.vercel.app"
   },
   {
     title: "Dark Tales: Whispers in the Fog",
