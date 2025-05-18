@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Hero from './Hero';
 import ProjectCard from './ProjectCard';
 import '../styles/DarkPortfolio.css';
-
+import slavicMythologyImg from '../assets/dark/slavic.png'; // ili odgovarajuća putanja
 import dostojevskyImg from '../assets/dark/dostojevsky.png';
 import vikingsImg from '../assets/dark/vikings.png';
 import witcherImg from '../assets/dark/witcher.png';
@@ -47,6 +47,12 @@ const projects = [
     image: gothicImg,
     description: "Estetika propadanja i lepote tame u jedinstvenom spoju arhitekture i osećanja.",
     link: "https://gothic-mu.vercel.app"
+  },
+    {
+    title: "Slavic Mythology: Forgotten Gods",
+    image: slavicMythologyImg, // Uvezi ili dodaj odgovarajuću sliku
+    description: "Digitalno uskrsnuće slovenskih božanstava, simbola i rituala u mračnoj atmosferi.",
+    link: "https://slavic.vercel.app" // zameni stvarnim linkom ako je različit
   }
 ];
 
