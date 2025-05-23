@@ -1,40 +1,12 @@
-# 🕯️ Dark Portfolio — noctis.design
+# React + Vite
 
-**Mračni interaktivni portfolio** u kojem svaki projekat priča sopstvenu priču kroz senke, krv i kod.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-![Dark Preview](./preview.png) <!-- Dodaj sliku ako želiš -->
+Currently, two official plugins are available:
 
-## 🩸 O projektu
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Dark Portfolio je zbirka mojih najintenzivnijih i estetski najmračnijih radova. Svaka stranica je dizajnirana sa posebnom pažnjom prema atmosferi, glitch detaljima, paleti boja tame, i naravno — storytellingu.
+## Expanding the ESLint configuration
 
-## 🔮 Projekti unutar portfolija
-
-- **Dostojevski: Mind in Shadows**  
-  _Istraživanje tame ljudske psihe kroz reaktivni sajt inspirisan Dostojevskim._
-- **Witcher: Path of the Wolf**  
-  _Svet tame, čudovišta i moralne sive zone._
-- **Gothic: Echoes of the Past**  
-  _Estetika propadanja i lepote tame._
-- **Dark Tales: Whispers in the Fog**  
-  _Zbirka mračnih priča i senovitih atmosfera._
-- **DreamJournal: Lucid Realms**  
-  _Digitalna fantazija podsvesti i snova._
-- **Slavic Mythology: Forgotten Gods**  
-  _Uskrsnuće slovenskih božanstava, simbola i rituala._
-
-## 🧪 Tehnologije
-
-- ⚛️ React + Vite
-- 🎨 CSS animations (custom + keyframes)
-- 🖤 Dark UI + glitch efekti
-- 📱 Responsive design
-- 🧠 Tematski storytelling kroz dizajn
-
-## 🚀 Pokretanje projekta lokalno
-
-```bash
-git clone https://github.com/tvoj-username/dark-portfolio.git
-cd dark-portfolio
-npm install
-npm run dev
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

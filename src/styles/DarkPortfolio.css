@@ -162,3 +162,116 @@
     max-height: 80%;
   }
 }
+
+.start-music-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.95) 0%, rgba(0,0,0,1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.start-music-button {
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: none;
+  border: 2px solid #8a0303;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  transition: all 0.3s ease;
+  background-color: rgba(138, 3, 3, 0.1);
+}
+
+.start-music-button:hover {
+  background: rgba(138, 3, 3, 0.2);
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+.glitch-button {
+  text-shadow: 1px 1px #8a0303, -1px -1px #000;
+  animation: glitch 1.5s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 1px 1px #8a0303;
+  }
+  20% {
+    text-shadow: -2px 0 #000;
+  }
+  40% {
+    text-shadow: 2px -1px #8a0303;
+  }
+  60% {
+    text-shadow: -1px 2px #000;
+  }
+  80% {
+    text-shadow: 1px -2px #8a0303;
+  }
+  100% {
+    text-shadow: 1px 1px #8a0303;
+  }
+}
+
+.stop-music-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #111;
+  color: crimson;
+  border: 1px solid crimson;
+  padding: 0.5rem 1rem;
+  z-index: 10000;
+  cursor: pointer;
+  font-family: 'Cinzel', serif;
+  text-shadow: 0 0 5px crimson;
+  transition: 0.3s ease;
+}
+
+.stop-music-button:hover {
+  background: crimson;
+  color: black;
+}
+
+.dark-quote {
+  margin-top: 1rem;
+  color: crimson;
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  text-align: center;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.hero-logo {
+  width: 120px;
+  height: auto;
+  position: fixed;
+  top: 20px;
+  left: 20px;  /* promenjeno sa right na left */
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+  z-index: 1000; /* da bude iznad ostalih elemenata */
+}
+
+.hero-logo:hover {
+  opacity: 1;
+}

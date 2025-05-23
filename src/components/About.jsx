@@ -6,6 +6,7 @@ const About = () => {
   return (
     <section className="about-section py-5">
       <div className="container text-light text-center">
+        
         <h2 className="about-title mb-4">O meni</h2>
 
         <img
